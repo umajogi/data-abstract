@@ -1,0 +1,10 @@
+# Data Abstract -> Hiding the internal details
+from abc import ABC,abstractmethod
+class Animal(ABC):
+    def sound(self):
+        pass
+class dog(Animal):
+    def sound(self):
+        return "bark"
+obj=dog()
+print(obj.sound())
